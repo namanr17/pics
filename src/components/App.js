@@ -8,7 +8,7 @@ class App extends React.Component {
 
   onSeacrhSubmit = async key => {
     const respose = await unsplash.get("/search/photos", {
-      params: { query: key, per_page: 50 }
+      params: { query: key, per_page: 100 }
     });
 
     this.setState({ images: respose.data.results });
