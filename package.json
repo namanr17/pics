@@ -22,5 +22,11 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  },
+  "homepage":"https://namanr17.github.io/pics/",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
 }
